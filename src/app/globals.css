@@ -1,3 +1,22 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
 
+
+html{
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    /* Scroll suave */
+    scroll-behavior: smooth;
+
+    /* Garantir que o header não fique em cima do h1 */
+    scroll-padding-top: 5rem;
+}
+
+body {
+  @apply bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100;
+  /* Garante que o body preencha a tela toda para o footer ficar lá embaixo */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
