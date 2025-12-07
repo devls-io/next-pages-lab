@@ -1,17 +1,17 @@
-import "@testing-library/jest-dom"
-import {render, screen, fireEvent} from "@testing-library/react"
-import Header from "@/components/Header"
+import "@testing-library/jest-dom";
+import { render, screen, fireEvent } from "@testing-library/react";
+import Header from "@/components/Header";
 
-describe("Header Component", ()=> {
-    it("deve renderizar o logo corretamente", ()=> {
-        render(<Header/>)
+describe("Header Component", () => {
+  it("deve renderizar o logo corretamente", () => {
+    render(<Header />);
 
-        // verificar se a logo foi renderizada
-        const logo = screen.getByText("⚡ Next.Lab")
-        expect(logo).toBeInTheDocument()
-    })
+    // verificar se a logo foi renderizada
+    const logo = screen.getByText("⚡ Next.Lab");
+    expect(logo).toBeInTheDocument();
+  });
 
-    it("deve alternar o estado do menu mobile ao clicar", () => {
+  it("deve alternar o estado do menu mobile ao clicar", () => {
     render(<Header />);
 
     // 1. Pega o botão
@@ -32,4 +32,4 @@ describe("Header Component", ()=> {
     // 6. Verifica se fechou
     expect(menuButton).toHaveAttribute("aria-expanded", "false");
   });
-})
+});
