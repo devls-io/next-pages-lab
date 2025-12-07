@@ -2,15 +2,16 @@
 
 @variant dark (&:where(.dark, .dark *));
 
+html {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 
-html{
-    transition: background-color 0.3s ease, color 0.3s ease;
+  /* Scroll suave */
+  scroll-behavior: smooth;
 
-    /* Scroll suave */
-    scroll-behavior: smooth;
-
-    /* Garantir que o header não fique em cima do h1 */
-    scroll-padding-top: 5rem;
+  /* Garantir que o header não fique em cima do h1 */
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -23,6 +24,6 @@ body {
 
 @media (max-width: 768px) {
   html {
-      scroll-padding-top: 13rem;
+    scroll-padding-top: 13rem;
   }
 }
