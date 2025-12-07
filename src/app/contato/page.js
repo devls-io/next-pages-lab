@@ -10,7 +10,7 @@ export default function Contato() {
         {/* Avatar / Foto */}
         <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg border-4 border-gray-300 dark:border-gray-800">
           <Image
-            src="/logo.jpg" // Caminho direto da pasta public
+            src="/avatar.jpg" // Caminho direto da pasta public
             alt="Avatar estilo sketch do desenvolvedor"
             fill // Ocupa 100% do container
             className="object-cover transition-transform duration-500 hover:scale-110" // Zoom suave ao passar o mouse no container
