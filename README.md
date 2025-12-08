@@ -64,7 +64,7 @@ O objetivo principal foi sair da teoria e colocar a mão na massa com conceitos 
 
 2. **Instale as dependências**
 
-    cd next-pages-lab
+    cd next-pages-lab <br>
     npm install
 
 3. **Rode o servidor de desenvolvimento**
