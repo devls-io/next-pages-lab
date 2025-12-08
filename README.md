@@ -6,7 +6,7 @@
 
 Este projeto é um laboratório prático desenvolvido para explorar as funcionalidades do **Next.js 16 (App Router)**, focado em entender a estrutura de pastas, server components e boas práticas de desenvolvimento moderno.
 
-> 🔗 **Demo Online:** [Link do seu projeto na Vercel aqui - Colocar após o deploy]
+> 🔗 **Demo Online:** https://next-pages-lab.vercel.app/
 
 ---
 
