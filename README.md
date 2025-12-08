@@ -1,42 +1,77 @@
-# 🚀 Next.js Boilerplate (2025)
+# ⚡ Next.Lab - Laboratório de Experimentos Next.js 16
 
-Um modelo inicial robusto e moderno para desenvolvimento web, configurado com as melhores práticas de mercado e ferramentas de qualidade de código.
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)
+![Jest](https://img.shields.io/badge/Jest-Testing-C21325?style=for-the-badge&logo=jest)
 
-## 🛠 Tecnologias & Ferramentas
+Este projeto é um laboratório prático desenvolvido para explorar as funcionalidades do **Next.js 16 (App Router)**, focado em entender a estrutura de pastas, server components e boas práticas de desenvolvimento moderno.
 
-Este boilerplate já vem configurado com:
-
-- **[Next.js 16](https://nextjs.org/)** - App Router e Server Components (Última versão).
-- **[React 19](https://react.dev/)** - A base moderna para interfaces.
-- **[Tailwind CSS v4](https://tailwindcss.com/)** - Estilização rápida e performática.
-- **[ESLint 9](https://eslint.org/)** (Flat Config) - Análise estática de código moderna.
-- **[Prettier](https://prettier.io/)** - Formatação automática de código (integrado ao ESLint).
-- **[Jest](https://jestjs.io/)** & **[React Testing Library](https://testing-library.com/)** - Ambiente pronto para testes unitários e de integração.
-
-## ⚙️ Scripts Disponíveis
-
-- `npm run dev`: Roda o servidor de desenvolvimento.
-- `npm run build`: Cria a build de produção.
-- `npm run start`: Roda a build de produção localmente.
-- `npm run lint`: Verifica erros de código e estilo (ESLint).
-- `npm run format`: Corrige automaticamente a formatação do código (Prettier).
-- `npm test`: Roda a suíte de testes.
-
-## 🚀 Como usar este Template
-
-1.  Clique no botão **"Use this template"** acima da lista de arquivos no GitHub.
-2.  Dê um nome ao seu novo repositório (ex: `meu-projeto-incrivel`).
-3.  Clone o novo repositório na sua máquina.
-4.  Instale as dependências:
-    ```bash
-    npm install
-    ```
-5.  Comece a codar!
-
-## 🧪 Estrutura de Pastas
-
-- `/src`: Todo o código fonte.
-- `__tests__` ou arquivos `.test.js`: Configurados para rodar com Jest.
-- Configs (`eslint.config.mjs`, `.prettierrc.mjs`, `jest.config.mjs`): Tudo em ES Modules para compatibilidade total.
+> 🔗 **Demo Online:** [Link do seu projeto na Vercel aqui - Colocar após o deploy]
 
 ---
+
+
+## 🚀 Funcionalidades & Aprendizados
+
+O objetivo principal foi sair da teoria e colocar a mão na massa com conceitos reais do mercado:
+
+### 🏠 Home (Server Components & Data Fetching)
+- Consumo de API externa (**JSONPlaceholder**) diretamente no servidor (Server Side Rendering).
+- Renderização de lista de posts simulando um blog.
+- Componentização e separação de responsabilidades (Lógica vs UI).
+
+### 👤 Sobre (Next/Image)
+- Implementação prática do componente **`<Image />`** do Next.js.
+- Aprendizado sobre carregamento otimizado: conversão automática de formatos e redimensionamento responsivo.
+- Uso de `priority` para LCP (Largest Contentful Paint).
+
+### 📞 Contato (Interatividade & UI)
+- Cartão de visita digital com design limpo e centralizado.
+- Componentes interativos com efeitos de **Hover**, **Scale** e **Transições CSS**.
+- Botão de acesso rápido ao GitHub.
+
+### 🛠️ Infraestrutura & Qualidade
+- **Dark Mode:** Sistema de tema claro/escuro com persistência via `localStorage`.
+- **Layout Responsivo:** Header fixo (Sticky) com menu mobile (Hambúrguer) feito do zero com React State.
+- **Testes Unitários:** Configuração de **Jest** e **React Testing Library** para garantir que componentes críticos (como o Header e o Fetch da Home) funcionem.
+- **Code Quality:** Configuração  de **ESLint** e **Prettier** para manter o código padronizado.
+
+---
+
+### 📂 Estrutura do Projeto
+
+ ```bash
+├── public/           # Arquivos estáticos (Imagens do Avatar e Background)
+├── src/
+│   ├── __tests__/    # Testes Unitários (Jest + RTL)
+│   ├── app/          # App Router (Rotas e Layouts)
+│   │   ├── contato/  # Rota /contato
+│   │   ├── sobre/    # Rota /sobre
+│   │   ├── globals.css # Estilos Globais (Tailwind)
+│   │   ├── layout.js # Layout Persistente (Root)
+│   │   └── page.js   # Página Inicial (Home)
+│   └── components/   # Componentes Reutilizáveis (Header, Footer, UI)
+├── .prettierrc.mjs   # Regras de Formatação
+├── eslint.config.mjs # Regras de Linting
+└── jest.config.mjs   # Configuração de Testes
+ ```
+
+## 🧪 Como rodar localmente
+
+1. **Clone o repositório:**
+   
+   git clone [https://github.com/devls-io/next-pages-lab.git](https://github.com/devls-io/next-pages-lab.git)
+
+2. **Instale as dependências**
+
+    cd next-pages-lab
+    npm install
+
+3. **Rode o servidor de desenvolvimento**
+
+    npm run dev
+
+4. **Rode os testes**
+
+    npm test
+
